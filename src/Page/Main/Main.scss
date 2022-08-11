@@ -1,4 +1,8 @@
 .main {
     display: flex;
     background-color: #e5e7eb;
+
+    &__content-centir {
+        padding: 30px;
+    }
 }

@@ -7,15 +7,18 @@ import "../Main/Main.scss";
 // Import Components
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import Search from "../../Components/Search/Search";
+import Table from "../../Components/Table/Table";
 
 function Main() {
     return (
         <>
             <section className="main">
                 <Sidebar />
-                <div>
+                <div className="main__content-centir">
                     <Search />
+                    <Table/>
                 </div>
+                
             </section>
         </>
     )
