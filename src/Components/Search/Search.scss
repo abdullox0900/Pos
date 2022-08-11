@@ -1,0 +1,48 @@
+.search {
+    display: flex;
+    width: 900px;
+    position: relative;
+    &__input {
+        width: 100%;
+        padding: 18px 18px 18px 45px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    &__input::placeholder {
+        font-size: 16px;
+        color: #9c9c9c;
+    }
+
+    ion-icon {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 20px;
+        color: #9c9c9c;
+    }
+
+    &__btn {
+        width: 270px;
+        margin-left: 20px;
+        font-size: 18px;
+        color: #1a237e;
+        border: none;
+        border: 2px solid #1a237e;
+        border-radius: 8px;
+        background-color: #fff;
+        cursor: pointer;
+        transition: ease 0.5s;
+    }
+
+    &__btn:hover {
+        color: #fff;
+        background-color: #1a237e;
+    }
+
+    &__btn:focus {
+        opacity: 0.6;
+    }
+}
