@@ -1,12 +1,18 @@
 // Import React
-import React from "react";
+import React, { useRef } from "react";
 
 // Import Style Components
 import "../Sidebar/Sidebar.scss";
 
 // Import Components
+import Blockwz from "../Blockwz/Blockwz";
 
 function Sidebar() {
+
+    const elBlock = React.useRef();
+
+    console.log(elBlock)
+
     return (
         <>
             <section className="sidebar">
@@ -24,7 +30,9 @@ function Sidebar() {
                 </ul>
 
                 <ul className="sidebar__list-buttom">
-                    <li className="sidebar__item">
+                    <li className="sidebar__item" onClick={() => {
+                        elBlock.current.classList.add("block--open")
+                    }}>
                         <ion-icon name="lock-closed-outline"></ion-icon>
                         <p className="sidebar__icon-title">Блокировка</p>
                     </li>
@@ -40,6 +48,8 @@ function Sidebar() {
                     </li>
                 </ul>
             </section>
+
+            <Blockwz elBlock={elBlock} />
         </>
     )
 }
