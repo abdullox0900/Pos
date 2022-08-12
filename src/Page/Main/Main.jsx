@@ -8,6 +8,7 @@ import "../Main/Main.scss";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import Search from "../../Components/Search/Search";
 import Table from "../../Components/Table/Table";
+import Calculator from "../../Components/Calculator/Calculator";
 
 function Main() {
     return (
@@ -16,9 +17,9 @@ function Main() {
                 <Sidebar />
                 <div className="main__content-centir">
                     <Search />
-                    <Table/>
+                    <Table />
                 </div>
-                
+                <Calculator />
             </section>
         </>
     )

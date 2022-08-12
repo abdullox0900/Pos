@@ -1,0 +1,115 @@
+.calcul {
+    width: 350px;
+    max-height: 720px;
+    padding: 20px;
+    margin-top: 110px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    &-header__num {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    &-header__set {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-header__set:nth-last-child(3) {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #cacaca;
+    }
+
+    &-header__tolal {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    &-header__total-num {
+        font-size: 22px;
+        font-weight: 600;
+        color: #1a237e;
+    }
+
+    &-header__text {
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #7e7c7c;
+    }
+
+    &-header__text-num {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &-footer {
+        width: 330px;
+        margin: -10px;
+    }
+
+    &__number-btn {
+        width: 90px;
+        height: 70px;
+        text-align: center;
+        margin: 10px;
+        outline: none;
+        border: 1px solid #cacaca;
+        background-color: #f0f0f0;
+        font-size: 30px;
+        font-weight: 500;
+        transition: ease 0.5s;
+        cursor: pointer;
+    }
+
+    &__number-btn:active {
+        opacity: 0.6;
+    }
+
+    &__border-btn:nth-child(1) {
+        border-radius: 10px 0px 0px 0px;
+    }
+
+    &__border-btn:nth-child(3) {
+        border-radius: 0px 10px 0px 0px;
+    }
+
+    &__border-btn:nth-child(10) {
+        border-radius: 0px 0px 0px 10px;
+    }
+
+    &__border-btn:nth-child(12) {
+        border-radius: 0px 0px 10px 0px;
+    }
+
+    &__number-top {
+        border: 2px solid #000;
+        border-radius: 10px;
+    }
+
+    &__number-top:nth-child(1) {
+        color: #b91c1c;
+        border: 2px solid #b91c1c;
+    }
+
+    &__submit-btn {
+        margin-left: 11px;
+        width: 310px;
+        height: 65px;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+        cursor: pointer;
+        background-color: #3949ab;
+        transition: ease 0.5s;
+    }
+
+    &__submit-btn:active {
+        opacity: 0.6;
+    }
+}
